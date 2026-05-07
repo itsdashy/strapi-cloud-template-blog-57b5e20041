@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_property_names",
+  "info": {
+    "icon": "ad",
+    "displayName": "Name"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

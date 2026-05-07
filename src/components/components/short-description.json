@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_property_short_descriptions",
+  "info": {
+    "icon": "align-center",
+    "description": "",
+    "displayName": "Short Description"
+  },
+  "options": {},
+  "attributes": {
+    "shortdescription": {
+      "type": "richtext"
+    }
+  }
+}

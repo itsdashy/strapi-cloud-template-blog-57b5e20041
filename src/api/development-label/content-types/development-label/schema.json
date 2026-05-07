@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "development_labels",
+  "info": {
+    "singularName": "development-label",
+    "pluralName": "development-labels",
+    "displayName": "Development-label",
+    "name": "development-label"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "Dark_Blue_text_on_White",
+        "White_text_on_Dark_Blue",
+        "White_text_on_Teal",
+        "White_text_on_Yellow",
+        "Dark_Blue_text_on_Light_Grey"
+      ]
+    }
+  }
+}

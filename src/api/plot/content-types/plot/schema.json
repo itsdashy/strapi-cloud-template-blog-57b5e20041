@@ -1,0 +1,143 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plots",
+  "info": {
+    "singularName": "plot",
+    "pluralName": "plots",
+    "displayName": "Plot",
+    "name": "plot",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "development": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::development.development",
+      "inversedBy": "plots"
+    },
+    "number": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "homeoftheweek": {
+      "type": "boolean"
+    },
+    "partexchange": {
+      "type": "boolean"
+    },
+    "property": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::property.property"
+    },
+    "bannerincentive": {
+      "type": "string"
+    },
+    "incentive1": {
+      "type": "string"
+    },
+    "incentive2": {
+      "type": "string"
+    },
+    "incentive3": {
+      "type": "string"
+    },
+    "incentive4": {
+      "type": "string"
+    },
+    "incentive5": {
+      "type": "string"
+    },
+    "calltoaction": {
+      "type": "string"
+    },
+    "availability": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "comingsoon",
+        "forsale",
+        "reserved",
+        "sold"
+      ],
+      "default": "none"
+    },
+    "dealofthemonth": {
+      "type": "boolean"
+    },
+    "movemaker": {
+      "type": "boolean"
+    },
+    "featuredhomeoftheweek": {
+      "type": "boolean"
+    },
+    "helptobuy": {
+      "type": "boolean"
+    },
+    "homereach": {
+      "type": "boolean"
+    },
+    "homeoftheweekoffer": {
+      "type": "string"
+    },
+    "override": {
+      "type": "dynamiczone",
+      "components": [
+        "components.name",
+        "components.short-description",
+        "components.images",
+        "components.bedrooms",
+        "components.bathrooms",
+        "components.garages"
+      ]
+    },
+    "showhome": {
+      "type": "boolean"
+    },
+    "buy_schemes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::buy-scheme.buy-scheme"
+    },
+    "plot_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::plot-type.plot-type"
+    },
+    "live": {
+      "type": "boolean"
+    },
+    "label_": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::plot-label.plot-label"
+    },
+    "hold": {
+      "type": "enumeration",
+      "enum": [
+        "Freehold",
+        "Leasehold"
+      ],
+      "required": true
+    },
+    "featuredplot": {
+      "type": "boolean"
+    },
+    "featuredplotlabel": {
+      "type": "string"
+    },
+    "maplocation": {
+      "type": "customField",
+      "customField": "plugin::google-maps-tonik.location-picker"
+    },
+    "zoopla": {
+      "type": "boolean"
+    }
+  }
+}

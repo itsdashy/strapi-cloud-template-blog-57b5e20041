@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "website_variables",
+  "info": {
+    "singularName": "website-variable",
+    "pluralName": "website-variables",
+    "displayName": "Website-variable",
+    "name": "website-variable"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "value": {
+      "type": "text"
+    },
+    "datemodified": {
+      "type": "datetime"
+    }
+  }
+}

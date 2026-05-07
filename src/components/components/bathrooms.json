@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_property_bathrooms",
+  "info": {
+    "icon": "bath",
+    "displayName": "Bathrooms"
+  },
+  "options": {},
+  "attributes": {
+    "bathrooms": {
+      "type": "integer"
+    }
+  }
+}

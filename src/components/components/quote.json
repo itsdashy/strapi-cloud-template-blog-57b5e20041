@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_components_quotes",
+  "info": {
+    "icon": "quote-right",
+    "description": "",
+    "displayName": "Quote"
+  },
+  "options": {},
+  "attributes": {
+    "quote": {
+      "type": "text"
+    },
+    "quoter": {
+      "type": "string"
+    },
+    "quoterdescription": {
+      "type": "string"
+    },
+    "quotehr": {
+      "type": "boolean"
+    },
+    "quoteimage": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": false,
+      "required": false
+    }
+  }
+}

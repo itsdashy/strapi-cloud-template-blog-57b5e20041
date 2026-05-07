@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_components_link_items",
+  "info": {
+    "icon": "link",
+    "description": "",
+    "displayName": "Links"
+  },
+  "options": {},
+  "attributes": {
+    "linkitems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.link"
+    },
+    "linkhr": {
+      "type": "boolean"
+    }
+  }
+}

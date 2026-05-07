@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_components_quote_carousels",
+  "info": {
+    "displayName": "Quote Carousel",
+    "icon": "quote",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "quotes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.quote"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

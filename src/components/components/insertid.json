@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_components_insertids",
+  "info": {
+    "icon": "cube",
+    "description": "",
+    "displayName": "Predefined module"
+  },
+  "options": {},
+  "attributes": {
+    "insertid": {
+      "type": "string"
+    }
+  }
+}

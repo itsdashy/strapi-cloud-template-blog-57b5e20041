@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_components_specificationicons",
+  "info": {
+    "icon": "list-ul",
+    "description": "",
+    "displayName": "specification"
+  },
+  "options": {},
+  "attributes": {
+    "specificationiconimage": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "specificationiconname": {
+      "type": "string"
+    }
+  }
+}

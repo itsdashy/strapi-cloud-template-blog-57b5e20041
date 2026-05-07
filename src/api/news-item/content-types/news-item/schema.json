@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_items",
+  "info": {
+    "singularName": "news-item",
+    "pluralName": "news-items",
+    "displayName": "News-item",
+    "name": "news-item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "seourl": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "date": {
+      "type": "date"
+    },
+    "office": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::region.region"
+    },
+    "shortdescription": {
+      "type": "richtext"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "components.text",
+        "components.imageonly",
+        "components.images",
+        "components.textimagehr",
+        "components.icon-list",
+        "components.carousel",
+        "components.quote",
+        "components.videos",
+        "components.insertid",
+        "components.link-items",
+        "components.buttonitems",
+        "components.quote-carousel"
+      ]
+    },
+    "Seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "live": {
+      "type": "boolean"
+    },
+    "carouselimage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "carouseltext": {
+      "type": "richtext"
+    },
+    "carouselimagecontain": {
+      "type": "boolean"
+    }
+  }
+}

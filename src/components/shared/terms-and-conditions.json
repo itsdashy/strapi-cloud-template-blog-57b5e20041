@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_terms_and_conditions",
+  "info": {
+    "displayName": "Terms and conditions"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "show": {
+      "type": "boolean"
+    },
+    "titlesection": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "counties",
+  "info": {
+    "singularName": "county",
+    "pluralName": "counties",
+    "displayName": "County",
+    "name": "county"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "seourl": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "lat": {
+      "type": "float"
+    },
+    "lng": {
+      "type": "float"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ways_to_buy_items",
+  "info": {
+    "singularName": "ways-to-buy-item",
+    "pluralName": "ways-to-buy-items",
+    "displayName": "Ways-to-buy-item",
+    "name": "ways-to-buy-item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "seourl": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "menutitle": {
+      "type": "string"
+    },
+    "Seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "components.text",
+        "components.imageonly",
+        "components.images",
+        "components.textimagehr",
+        "components.icon-list",
+        "components.carousel",
+        "components.quote",
+        "components.videos",
+        "components.insertid",
+        "components.link-items",
+        "components.buttonitems",
+        "components.quote-carousel"
+      ]
+    },
+    "order": {
+      "type": "integer"
+    },
+    "live": {
+      "type": "boolean"
+    },
+    "carouselimage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "carouseltext": {
+      "type": "richtext"
+    },
+    "carouselimagecontain": {
+      "type": "boolean"
+    }
+  }
+}

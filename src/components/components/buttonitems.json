@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_components_buttonitems",
+  "info": {
+    "icon": "audio-description",
+    "description": "",
+    "displayName": "Buttons"
+  },
+  "options": {},
+  "attributes": {
+    "buttonitems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.button"
+    },
+    "buttonhr": {
+      "type": "boolean"
+    }
+  }
+}

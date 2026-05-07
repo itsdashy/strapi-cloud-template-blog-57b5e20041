@@ -1,0 +1,108 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "Property",
+    "name": "property",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "bedrooms": {
+      "type": "integer",
+      "default": 0
+    },
+    "shortdescription": {
+      "type": "richtext"
+    },
+    "bathrooms": {
+      "type": "integer",
+      "default": 0
+    },
+    "seourl": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "showhome": {
+      "type": "dynamiczone",
+      "components": [
+        "components.images",
+        "components.text",
+        "components.videos",
+        "components.link-items"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "Seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "components.text",
+        "components.videos",
+        "components.link-items"
+      ]
+    },
+    "live": {
+      "type": "boolean"
+    },
+    "showoptionsextras": {
+      "type": "boolean"
+    },
+    "housetypespecificationssheet": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "housetypehighlights": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.specificationicon"
+    },
+    "floorplans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.floorhouse"
+    },
+    "garages": {
+      "type": "integer",
+      "default": 0
+    },
+    "displayname": {
+      "type": "string"
+    },
+    "termsandconditions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.terms-and-conditions"
+    }
+  }
+}

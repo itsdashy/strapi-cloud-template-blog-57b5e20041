@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_components_textimagehrs",
+  "info": {
+    "icon": "address-card",
+    "description": "",
+    "displayName": "Image & Text"
+  },
+  "options": {},
+  "attributes": {
+    "imagehr": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "texthr": {
+      "type": "richtext"
+    },
+    "appendhr": {
+      "type": "boolean"
+    },
+    "titlehr": {
+      "type": "string"
+    }
+  }
+}

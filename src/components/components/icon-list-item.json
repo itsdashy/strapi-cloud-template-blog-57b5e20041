@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_components_icon_list_items",
+  "info": {
+    "icon": "list-alt",
+    "description": "",
+    "displayName": "Icon list item"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

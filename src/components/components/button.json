@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_components_buttons",
+  "info": {
+    "icon": "stop",
+    "displayName": "Button"
+  },
+  "options": {},
+  "attributes": {
+    "buttontitle": {
+      "type": "string"
+    },
+    "buttonhref": {
+      "type": "string"
+    }
+  }
+}

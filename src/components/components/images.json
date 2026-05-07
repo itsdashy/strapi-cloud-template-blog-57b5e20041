@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_components_images",
+  "info": {
+    "icon": "images",
+    "description": "",
+    "displayName": "Images"
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": true,
+      "required": false
+    },
+    "imageshr": {
+      "type": "boolean"
+    },
+    "imagescarousel": {
+      "type": "boolean"
+    }
+  }
+}

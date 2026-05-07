@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "consent_popups",
+  "info": {
+    "singularName": "consent-popup",
+    "pluralName": "consent-popups",
+    "displayName": "Consent-popup",
+    "name": "consent-popup"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "uid": {
+      "type": "uid"
+    },
+    "show": {
+      "type": "datetime"
+    },
+    "hide": {
+      "type": "datetime"
+    },
+    "shortmessage": {
+      "type": "richtext"
+    },
+    "longmessage": {
+      "type": "richtext"
+    },
+    "live": {
+      "type": "boolean"
+    },
+    "cookiename": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "cookieexpiry": {
+      "type": "biginteger"
+    }
+  }
+}

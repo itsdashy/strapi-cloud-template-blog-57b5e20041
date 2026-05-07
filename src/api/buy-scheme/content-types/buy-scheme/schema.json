@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "buy_schemes",
+  "info": {
+    "singularName": "buy-scheme",
+    "pluralName": "buy-schemes",
+    "displayName": "Buy-scheme",
+    "name": "buy-scheme",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "seourl": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "plotavailabilitytext": {
+      "type": "string"
+    },
+    "Seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "components.text",
+        "components.imageonly",
+        "components.images",
+        "components.textimagehr",
+        "components.icon-list",
+        "components.carousel",
+        "components.quote",
+        "components.videos",
+        "components.insertid",
+        "components.link-items",
+        "components.buttonitems",
+        "components.quote-carousel"
+      ]
+    },
+    "live": {
+      "type": "boolean"
+    },
+    "carouselimage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "carouseltext": {
+      "type": "richtext"
+    },
+    "title": {
+      "type": "string"
+    },
+    "carouselimagecontain": {
+      "type": "boolean"
+    },
+    "zoopla": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_components_garages",
+  "info": {
+    "icon": "car",
+    "description": "",
+    "displayName": "Garages"
+  },
+  "options": {},
+  "attributes": {
+    "garages": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_components_carousels",
+  "info": {
+    "icon": "clone",
+    "description": "",
+    "displayName": "Carousel"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "textimage": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.textimage"
+    }
+  }
+}

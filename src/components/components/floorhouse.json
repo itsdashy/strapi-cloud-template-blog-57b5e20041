@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_components_floorhouses",
+  "info": {
+    "icon": "layer-group",
+    "description": "",
+    "displayName": "floor info"
+  },
+  "options": {},
+  "attributes": {
+    "floorimage": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "floor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::floor.floor"
+    },
+    "floormeasurements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.floormeasurement"
+    }
+  }
+}

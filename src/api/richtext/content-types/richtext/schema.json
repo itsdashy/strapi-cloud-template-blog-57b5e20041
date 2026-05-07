@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "richtexts",
+  "info": {
+    "singularName": "richtext",
+    "pluralName": "richtexts",
+    "displayName": "Richtext",
+    "name": "richtext"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "richtext": {
+      "type": "richtext"
+    }
+  }
+}

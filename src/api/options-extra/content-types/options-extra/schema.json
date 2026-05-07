@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "options_extras",
+  "info": {
+    "singularName": "options-extra",
+    "pluralName": "options-extras",
+    "displayName": "Options-extra",
+    "name": "options-extra",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "seourl": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "menutitle": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "Seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "carouselimage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "carouseltext": {
+      "type": "richtext"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "components.text",
+        "components.imageonly",
+        "components.images",
+        "components.textimagehr",
+        "components.icon-list",
+        "components.carousel",
+        "components.quote",
+        "components.videos",
+        "components.insertid",
+        "components.link-items",
+        "components.buttonitems",
+        "components.quote-carousel"
+      ]
+    },
+    "live": {
+      "type": "boolean"
+    },
+    "carouselimagecontain": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_components_texts",
+  "info": {
+    "icon": "bars",
+    "description": "",
+    "displayName": "Title / Text"
+  },
+  "options": {},
+  "attributes": {
+    "textonlyhr": {
+      "type": "boolean"
+    },
+    "textonlytitle": {
+      "type": "string"
+    },
+    "textonlytext": {
+      "type": "richtext"
+    },
+    "textonlylargetitle": {
+      "type": "boolean"
+    }
+  }
+}

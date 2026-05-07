@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "search_pages",
+  "info": {
+    "singularName": "search-page",
+    "pluralName": "search-pages",
+    "displayName": "Search-page",
+    "name": "search-page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "seourl": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "menutitle": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "live": {
+      "type": "boolean"
+    },
+    "Seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

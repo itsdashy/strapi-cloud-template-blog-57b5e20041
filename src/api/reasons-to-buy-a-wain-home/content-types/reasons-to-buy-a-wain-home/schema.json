@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reasons_to_buy_a_wain_homes",
+  "info": {
+    "singularName": "reasons-to-buy-a-wain-home",
+    "pluralName": "reasons-to-buy-a-wain-homes",
+    "displayName": "Reasons-to-buy-a-wain-home",
+    "name": "reasons-to-buy-a-wain-home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "seourl": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "menutitle": {
+      "type": "string"
+    },
+    "Seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "carouselimage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "carouseltext": {
+      "type": "richtext"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "components.text",
+        "components.imageonly",
+        "components.images",
+        "components.textimagehr",
+        "components.icon-list",
+        "components.carousel",
+        "components.quote",
+        "components.videos",
+        "components.insertid",
+        "components.link-items",
+        "components.buttonitems",
+        "components.quote-carousel"
+      ]
+    },
+    "order": {
+      "type": "integer"
+    },
+    "live": {
+      "type": "boolean"
+    },
+    "carouselbigtext": {
+      "type": "richtext"
+    },
+    "carouseltitle": {
+      "type": "string"
+    },
+    "carousellink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.link"
+    },
+    "carouselbigtextcolor": {
+      "type": "enumeration",
+      "enum": [
+        "blue",
+        "white",
+        "pink"
+      ]
+    },
+    "carouselimagecontain": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "floors",
+  "info": {
+    "singularName": "floor",
+    "pluralName": "floors",
+    "displayName": "Floor",
+    "name": "floor"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "live": {
+      "type": "boolean"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

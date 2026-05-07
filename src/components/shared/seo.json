@@ -1,26 +1,20 @@
 {
   "collectionName": "components_shared_seos",
   "info": {
-    "name": "Seo",
-    "icon": "allergies",
-    "displayName": "Seo",
-    "description": ""
+    "icon": "globe",
+    "description": "",
+    "displayName": "seo"
   },
   "options": {},
   "attributes": {
-    "metaTitle": {
-      "type": "string",
-      "required": true
+    "metatitle": {
+      "type": "string"
     },
-    "metaDescription": {
-      "type": "text",
-      "required": true
+    "metadescription": {
+      "type": "text"
     },
-    "shareImage": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": ["images"]
+    "metakeys": {
+      "type": "text"
     }
   }
 }

@@ -1,0 +1,62 @@
+{
+  "collectionName": "components_components_heroitems",
+  "info": {
+    "icon": "square",
+    "description": "",
+    "displayName": "hero item"
+  },
+  "options": {},
+  "attributes": {
+    "textcolor": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "blue"
+      ]
+    },
+    "backgroundimage": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "textimage": {
+      "type": "media",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "heroitemtype": {
+      "type": "enumeration",
+      "enum": [
+        "image",
+        "promo",
+        "video"
+      ]
+    },
+    "promo_page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::promo-page.promo-page"
+    },
+    "video": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.videoitem"
+    },
+    "herotext": {
+      "type": "richtext"
+    },
+    "live": {
+      "type": "boolean"
+    }
+  }
+}

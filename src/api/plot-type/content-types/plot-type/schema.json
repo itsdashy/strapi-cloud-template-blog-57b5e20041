@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plot_types",
+  "info": {
+    "singularName": "plot-type",
+    "pluralName": "plot-types",
+    "displayName": "Plot-type",
+    "name": "plot-type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "live": {
+      "type": "boolean"
+    },
+    "zoopla": {
+      "type": "string"
+    }
+  }
+}

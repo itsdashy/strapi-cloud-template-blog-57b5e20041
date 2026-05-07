@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_components_floormeasurements",
+  "info": {
+    "icon": "ruler",
+    "description": "",
+    "displayName": "floor measurement"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "mm": {
+      "type": "string"
+    },
+    "inches": {
+      "type": "string"
+    }
+  }
+}

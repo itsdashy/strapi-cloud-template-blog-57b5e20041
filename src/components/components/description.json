@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_property_descriptions",
+  "info": {
+    "icon": "align-justify",
+    "displayName": "Description"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_components_textimages",
+  "info": {
+    "icon": "align-right",
+    "description": "",
+    "displayName": "Text & image"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ],
+      "multiple": false,
+      "required": false
+    },
+    "text": {
+      "type": "richtext",
+      "required": false
+    }
+  }
+}

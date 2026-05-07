@@ -1,0 +1,298 @@
+{
+  "kind": "collectionType",
+  "collectionName": "developments",
+  "info": {
+    "singularName": "development",
+    "pluralName": "developments",
+    "displayName": "Development",
+    "name": "development",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "office": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::region.region"
+    },
+    "city": {
+      "type": "string",
+      "required": false
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "addressline1": {
+      "type": "string"
+    },
+    "addressline2": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "mondayopening": {
+      "type": "time"
+    },
+    "mondayclosing": {
+      "type": "time"
+    },
+    "tuesdayopening": {
+      "type": "time"
+    },
+    "tuesdayclosing": {
+      "type": "time"
+    },
+    "wednesdayopening": {
+      "type": "time"
+    },
+    "wednesdayclosing": {
+      "type": "time"
+    },
+    "thursdayopening": {
+      "type": "time"
+    },
+    "thursdayclosing": {
+      "type": "time"
+    },
+    "fridayopening": {
+      "type": "time"
+    },
+    "fridayclosing": {
+      "type": "time"
+    },
+    "saturdayopening": {
+      "type": "time"
+    },
+    "saturdayclosing": {
+      "type": "time"
+    },
+    "sundayopening": {
+      "type": "time"
+    },
+    "sundayclosing": {
+      "type": "time"
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "seourl": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "specificationstext": {
+      "type": "richtext"
+    },
+    "forthcoming": {
+      "type": "boolean"
+    },
+    "lat": {
+      "type": "float"
+    },
+    "lng": {
+      "type": "float"
+    },
+    "email": {
+      "type": "email"
+    },
+    "conversionid": {
+      "type": "string"
+    },
+    "locationkeys": {
+      "type": "string"
+    },
+    "lastfew": {
+      "type": "boolean"
+    },
+    "contactbuilder": {
+      "type": "integer"
+    },
+    "active": {
+      "type": "boolean",
+      "required": false
+    },
+    "homeofweek": {
+      "type": "boolean"
+    },
+    "plots": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::plot.plot",
+      "mappedBy": "development"
+    },
+    "featuredtext": {
+      "type": "text"
+    },
+    "siteplanimage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "siteplanpdf": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "components.text",
+        "components.imageonly",
+        "components.images",
+        "components.textimagehr",
+        "components.carousel",
+        "components.quote",
+        "components.videos",
+        "components.insertid",
+        "components.link-items",
+        "components.buttonitems",
+        "components.quote-carousel"
+      ]
+    },
+    "aboutthearea": {
+      "type": "dynamiczone",
+      "components": [
+        "components.text",
+        "components.imageonly",
+        "components.images",
+        "components.textimagehr",
+        "components.icon-list",
+        "components.carousel",
+        "components.quote",
+        "components.videos",
+        "components.insertid",
+        "components.link-items",
+        "components.buttonitems",
+        "components.quote-carousel"
+      ]
+    },
+    "live": {
+      "type": "boolean"
+    },
+    "contentbottom": {
+      "type": "dynamiczone",
+      "components": [
+        "components.text",
+        "components.imageonly",
+        "components.images",
+        "components.textimagehr",
+        "components.carousel",
+        "components.quote",
+        "components.videos",
+        "components.insertid",
+        "components.link-items",
+        "components.buttonitems",
+        "components.quote-carousel"
+      ]
+    },
+    "brochure": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "developmenthighlights": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.specificationicon"
+    },
+    "housetypehighlights": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.specificationicon"
+    },
+    "housetypespecificationssheet": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "herotext": {
+      "type": "richtext"
+    },
+    "shortdescription": {
+      "type": "text"
+    },
+    "county_": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::county.county"
+    },
+    "label_": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::development-label.development-label"
+    },
+    "disableenquire": {
+      "type": "boolean"
+    },
+    "coinsid": {
+      "type": "string"
+    },
+    "coins": {
+      "type": "integer"
+    },
+    "whatthreewords": {
+      "type": "string"
+    },
+    "event": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.event"
+    },
+    "termsandconditions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.terms-and-conditions"
+    },
+    "interactivemap": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "zooplaid": {
+      "type": "string"
+    },
+    "homewisedev": {
+      "type": "boolean"
+    },
+    "homewiseplots": {
+      "type": "boolean"
+    }
+  }
+}

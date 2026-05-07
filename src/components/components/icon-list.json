@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_components_icon_lists",
+  "info": {
+    "icon": "list",
+    "description": "",
+    "displayName": "Icon list"
+  },
+  "options": {},
+  "attributes": {
+    "iconlistitems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.icon-list-item"
+    },
+    "iconsshowleft": {
+      "type": "boolean"
+    },
+    "showsidebyside": {
+      "type": "boolean"
+    },
+    "iconlisthr": {
+      "type": "boolean"
+    }
+  }
+}

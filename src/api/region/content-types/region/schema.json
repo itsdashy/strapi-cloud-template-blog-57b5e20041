@@ -1,0 +1,106 @@
+{
+  "kind": "collectionType",
+  "collectionName": "regions",
+  "info": {
+    "singularName": "region",
+    "pluralName": "regions",
+    "displayName": "Region",
+    "name": "region"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "seourl": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "city": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "addressline1": {
+      "type": "string"
+    },
+    "addressline2": {
+      "type": "string"
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "mondayopening": {
+      "type": "time"
+    },
+    "mondayclosing": {
+      "type": "time"
+    },
+    "tuesdayopening": {
+      "type": "time"
+    },
+    "tuesdayclosing": {
+      "type": "time"
+    },
+    "wednesdayopening": {
+      "type": "time"
+    },
+    "wednesdayclosing": {
+      "type": "time"
+    },
+    "thursdayopening": {
+      "type": "time"
+    },
+    "thursdayclosing": {
+      "type": "time"
+    },
+    "fridayopening": {
+      "type": "time"
+    },
+    "fridayclosing": {
+      "type": "time"
+    },
+    "saturdayopening": {
+      "type": "time"
+    },
+    "saturdayclosing": {
+      "type": "time"
+    },
+    "sundayopening": {
+      "type": "time"
+    },
+    "sundayclosing": {
+      "type": "time"
+    },
+    "showfirst": {
+      "type": "boolean"
+    },
+    "live": {
+      "type": "boolean"
+    },
+    "county_": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::county.county"
+    },
+    "latitude_search_map": {
+      "type": "float"
+    },
+    "longitude_search_map": {
+      "type": "float"
+    },
+    "coinsofficeid": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

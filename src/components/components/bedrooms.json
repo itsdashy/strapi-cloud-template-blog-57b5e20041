@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_property_bedrooms",
+  "info": {
+    "icon": "bed",
+    "displayName": "Bedrooms"
+  },
+  "options": {},
+  "attributes": {
+    "bedrooms": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_components_links",
+  "info": {
+    "icon": "globe-americas",
+    "description": "",
+    "displayName": "Link"
+  },
+  "options": {},
+  "attributes": {
+    "linktitle": {
+      "type": "string"
+    },
+    "linkurl": {
+      "type": "string"
+    },
+    "linknewwindow": {
+      "type": "boolean"
+    },
+    "is360video": {
+      "type": "boolean"
+    }
+  }
+}
