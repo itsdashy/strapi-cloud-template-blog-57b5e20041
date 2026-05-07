@@ -1,0 +1,52 @@
+{
+  "name": "google-maps-tonik",
+  "version": "1.0.4",
+  "private": true,
+  "description": "A Google Maps custom field for Strapi, allowing you to pick a location.",
+  "strapi": {
+    "name": "google-maps-tonik",
+    "description": "A Google Maps custom field allowing you to pick a location.",
+    "kind": "plugin",
+    "displayName": "Google Maps Tonik"
+  },
+  "dependencies": {
+    "@babel/core": "^7.22.9",
+    "latlon-geohash": "2.00",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@strapi/typescript-utils": "^4.6.0",
+    "@types/react": "^17.0.53",
+    "@types/react-dom": "^18.0.28",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/styled-components": "^5.1.26",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.6",
+    "typescript": "5.0.4"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.6"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "maintainers": [
+    {
+      "name": "A Strapi developer"
+    }
+  ],
+  "engines": {
+    "node": ">=14.19.1 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "scripts": {
+    "develop": "tsc -p tsconfig.server.json -w",
+    "build": "tsc -p tsconfig.server.json"
+  },
+  "license": "MIT"
+}
