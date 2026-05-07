@@ -132,6 +132,10 @@
     "featuredplotlabel": {
       "type": "string"
     },
+    "maplocation": {
+      "type": "customField",
+      "customField": "plugin::google-maps-tonik.location-picker"
+    },
     "zoopla": {
       "type": "boolean"
     }
