@@ -133,8 +133,7 @@
       "type": "string"
     },
     "maplocation": {
-      "type": "customField",
-      "customField": "plugin::google-maps-tonik.location-picker"
+      "type": "string"
     },
     "zoopla": {
       "type": "boolean"
